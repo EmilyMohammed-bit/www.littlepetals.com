@@ -1,0 +1,180 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff7f5;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    background-image: url("images/headder.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.actions button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+/* BANNER */
+.banner {
+    text-align: center;
+    padding: 80px;
+    background-image:url("images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #680505;
+}
+
+.cta-buttons button {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+}
+
+/* CTA STYLES */
+.primary {
+    background: #f8b6c1;
+    color: white;
+}
+
+.secondary {
+    background: #fff;
+    border: 1px solid #f8b6c1;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 30px;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    background: #f8b6c1;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    background: #fad4c0;
+    padding: 20px;
+}
+
+.logo img {
+    height: 75px;
+}
+/* HOVER EFFECTS */
+nav a:hover {
+    color: #f8b6c1;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* HOVER EFFECTS */
+nav a:hover {
+    color: #f8b6c1;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        padding: 40px;
+    }
+}
+.form-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.form-section input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 300px;
+}
+
+.form-section button {
+    margin-top: 15px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    margin: 5px;
+    padding: 8px 12px;
+}
+.tag {
+    font-size: 12px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.side-info {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+}

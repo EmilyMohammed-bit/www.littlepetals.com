@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Little Petal Co.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="signup.html">Online Order</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="form-section">
+    <h2>Create An Account</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="password" id="password" placeholder="Password">
+        <input type="password" id="confirm" placeholder="Confirm Password">
+
+        <label>
+            <input type="checkbox" id="terms"> I agree to the Terms & Privacy Policy
+        </label>
+
+        <button type="submit" class="primary">Create Account</button>
+
+    </form>
+
+    <p>Already have an account? <button class="secondary">Log In</button></p>
+
+</section>
+
+<footer>
+    <div>
+        <h4>Contact Information</h4>
+        <p>📞 Phone: (868) 775-8569</p>
+        <p>📧 Email: info@littlepetalco.com</p>
+        <p>📍 Location: Port of Spain, Trinidad</p>
+    </div>
+
+    <div>
+        <h4>Social Media</h4>
+        <p>Instagram | Facebook | WhatsApp</p>
+    </div>
+
+    <div>
+        <h4>Policies</h4>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+    </div>
+
+    <div>
+        <h4>Help</h4>
+        <p>FAQ</p>
+        <p>Support Center</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

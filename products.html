@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Little Petal Co.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="signup.html">Online Order</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">FAQ</a>
+    </nav>
+
+    <div class="actions">
+        <button class="login">Login</button>
+        <button class="cart">🛒 Cart</button>
+    </div>
+</header>
+
+<section class="products">
+    <h2>Products</h2>
+
+    <!-- FILTERS -->
+    <div class="filters">
+
+    <select id="category" onchange="filterProducts()">
+        <option value="all">Category</option>
+        <option value="roses">Roses</option>
+        <option value="mixed">Mixed</option>
+    </select>
+
+   <select id="price" onchange="filterProducts()">
+    <option value="all">Price</option>
+    <option value="low">Under $50</option>
+    <option value="high">Above $50</option>
+</select>
+
+    <select id="occasion" onchange="filterProducts()">
+        <option value="all">Occasion</option>
+        <option value="romance">Romance</option>
+        <option value="birthday">Birthday</option>
+    </select>
+
+<div class="product-grid">
+
+    <!-- ROSE (ROMANCE, LOW PRICE) -->
+    <div class="card" data-category="roses" data-price="45" data-occasion="romance">
+        <img src="images/rose.jpg" alt="Rose Bouquet">
+        <h3>Rose Bouquet</h3>
+        <p>$45</p>
+        <p class="tag">Category: Roses</p>
+        <p class="tag">Occasion: Romance</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- PINK ROSES (ROMANCE, HIGH PRICE) -->
+    <div class="card" data-category="roses" data-price="55" data-occasion="romance">
+        <img src="images/pink.jpg" alt="Pink Roses">
+        <h3>Pink Roses</h3>
+        <p>$55</p>
+        <p class="tag">Category: Roses</p>
+        <p class="tag">Occasion: Romance</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- SPRING MIX (BIRTHDAY, LOW PRICE) -->
+    <div class="card" data-category="mixed" data-price="48" data-occasion="birthday">
+        <img src="images/spring.jpg" alt="Spring Flowers">
+        <h3>Spring Flowers</h3>
+        <p>$48</p>
+        <p class="tag">Category: Mixed</p>
+        <p class="tag">Occasion: Birthday</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <!-- SUNFLOWER (BIRTHDAY, HIGH PRICE) -->
+    <div class="card" data-category="mixed" data-price="50" data-occasion="birthday">
+        <img src="images/sunflower boquet.jpg" alt="Sunflower Bouquet">
+        <h3>Sunflower Mix</h3>
+        <p>$50</p>
+        <p class="tag">Category: Mixed</p>
+        <p class="tag">Occasion: Birthday</p>
+        <button onclick="addToCart()">Add to Cart</button>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <div>
+        <h4>Contact Information</h4>
+        <p>📞 Phone: (868) 775-8569</p>
+        <p>📧 Email: info@littlepetalco.com</p>
+        <p>📍 Location: Port of Spain, Trinidad</p>
+    </div>
+
+    <div>
+        <h4>Social Media</h4>
+        <p>Instagram | Facebook | WhatsApp</p>
+    </div>
+
+    <div>
+        <h4>Policies</h4>
+        <p>Privacy Policy</p>
+        <p>Terms & Conditions</p>
+    </div>
+
+    <div>
+        <h4>Help</h4>
+        <p>FAQ</p>
+        <p>Support Center</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<section class="side-info">
+    <h3>Special Offers 🌸</h3>
+    <p>Get 10% off all bouquets this week!</p>
+    <button class="secondary">View Deals</button>
+</section>
+
+</body>
+</html>
